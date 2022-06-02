@@ -4,6 +4,13 @@ from app_coder.models import Curso
 from django.template import loader
 # Create your views here.
 
+def inicio(request):
+
+    return render(request, "plantillas.html")
+
+
+
+
 
 def cursos(request):
     cursos= Curso.objects.all()
